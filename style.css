@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(135deg, #110337, #010004);
+
+}
+
+
+.nav {
+    padding-top: 15px;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+
+}
+
+#center-nav {
+    display: flex;
+}
+
+.nav #center-nav ul li {
+    list-style: none;
+    color: white;
+
+}
+
+.nav #center-nav ul li a {
+    padding: 25px;
+    text-decoration: none;
+    color: rgb(211, 208, 208);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-body {
+    height: 100vh;
+    width: 100%;
+}
+
+.nav #left-nav {
+    padding-left: 35px;
+}
+
+.nav #right-nav {
+    padding-right: 35px;
+}
+
+.nav #left-nav h2 {
+    color: white;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.home-nav .nav #center-nav ul li .home {
+    padding: 8px;
+    background-color: rgb(9, 2, 32);
+    border-radius: 5px;
+    color: yellow;
+}
+
+.nav #center-nav ul li :hover {
+    color: yellow;
+}
+
+.nav #center-nav ul li .home :hover {
+    color: white;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-nav {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-about-me {
+    min-width: 255px;
+    margin: 8%;
+    height: 50vh;
+    width: 40vw;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-about-me .home-my-name {
+    height: 50%;
+    width: 100%;
+    border-left: 5px solid yellow;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.home-about-me .home-my-name h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 3.2rem;
+    padding-left: 12px;
+    padding-top: 20px;
+}
+
+.home-about-me .home-my-name h5 {
+    letter-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(179, 177, 177);
+    font-size: 1rem;
+    padding-left: 12px;
+    padding-bottom: 60px;
+    position: relative;
+    animation: slide-in 1s ease-in-out forwards;
+}
+
+.home-about-me #btn {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 13px;
+    background-color: transparent;
+    height: 11%;
+    width: 28%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    min-width: 175px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+#btn:hover {
+    background-color: white;
+    color: #110337;
+
+}
+
+
+.home-container .home-my-pic {
+    height: 50vh;
+    width: 40vw;
+    margin-right: 30px;
+
+}
+
+.home-my-pic img {
+    padding-left: 30px;
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+}
+
+.project {
+    height: 100vh;
+    width: 100%;
+}
+
+.contact {
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* About Page */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about .about-upper {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+}
+
+.about .about-upper .about-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 15px;
+    height: 45vh;
+    width: 25vw;
+    min-width: 200px;
+}
+
+.about .about-upper .about-pic img {
+    padding-right: 20px;
+    border-right: 5px solid yellow;
+    height: 95%;
+}
+
+.about .about-upper .about-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    height: 45vh;
+    width: 50vw;
+    min-width: 250px;
+}
+
+.about .about-upper .about-about-me h3 {
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about .about-upper .about-about-me #para {
+    font-weight: 300;
+    font-size: 20px;
+    padding-right: 200px;
+    padding-top: 10px;
+    color: rgb(179, 177, 177);
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+
+}
+
+/* Lower About */
+
+.about .about-lower {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+}
+
+.about .about-lower .about-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 6.5vw;
+    padding: 15px;
+    height: 45vh;
+    width: 25vw;
+    min-width: 200px;
+}
+
+.about .about-lower .about-pic img {
+    padding-left: 20px;
+    border-left: 5px solid yellow;
+    height: 95%;
+}
+
+.about .about-lower .about-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 4vw;
+    padding: 15px;
+    height: 45vh;
+    width: 50vw;
+    min-width: 250px;
+}
+
+.about .about-lower .about-about-me h3 {
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about .about-lower .about-about-me #para {
+    font-weight: 300;
+    font-size: 20px;
+    padding-right: 200px;
+    padding-top: 10px;
+    color: rgb(179, 177, 177);
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.contact {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact #contact-btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    height: 15vh;
+    width: 25vw;
+    background-color: white;
+    font-size: 2vw;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    font-weight: 800;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-weight: 800;
+}
+
+.contact #contact-btn a{
+    text-decoration: none;
+}
+
+.contact #contact-btn :hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Add animation to #para in about page */
+.about #para {
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+/* Add animation to img in about page */
+.about .about-pic img {
+    animation: slide-in-img 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-img {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .nav #center-nav ul li a {
+        font-size: 0px;
+    }
+
+    .home-nav .nav #center-nav ul li .home {
+        background-color: rgba(9, 2, 32, 0);
+    }
+
+    .home-about-me .home-my-name h5 {
+        font-size: 12px;
+        padding-top: 2px;
+    }
+
+    .home-about-me .home-my-name h2 {
+        font-family: monospace;
+        color: white;
+        font-size: 3rem;
+        padding-top: 0px;
+    }
+
+    .home-container {
+        flex-direction: column;
+        overflow: hidden;
+        align-items: flex-start;
+    }
+
+    .home-my-pic img {
+        padding-left: 10px;
+    }
+
+    /* about */
+
+    .about .about-upper {
+        flex-direction: column;
+    }
+
+    .about .about-upper .about-pic {
+        height: 25vh;
+    }
+
+    .about .about-upper .about-about-me {
+        height: 25vh;
+        width: 90%;
+    }
+
+    .about .about-upper .about-about-me h3 {
+
+        font-size: 20px;
+    }
+
+    .about .about-upper .about-about-me #para {
+        font-size: 12px;
+        padding-right: 0;
+        padding-top: 5px;
+    }
+
+    .about .about-upper .about-about-me {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about .about-upper .about-pic img {
+        border-bottom: 5px solid yellow;
+        border-right: none;
+    }
+
+    /* about-lower */
+
+    .about .about-lower {
+        flex-direction: column;
+    }
+
+    .about .about-lower .about-pic {
+        height: 25vh;
+    }
+
+    .about .about-lower .about-about-me {
+        height: 25vh;
+        width: 90%;
+    }
+
+    .about .about-lower .about-about-me h3 {
+
+        font-size: 25px;
+    }
+
+    .about .about-lower .about-about-me #para {
+        font-size: 12px;
+        padding-right: 0;
+        padding-top: 5px;
+    }
+
+    .about .about-lower .about-about-me {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about .about-lower .about-pic img {
+        border-bottom: 5px solid yellow;
+        border-left: none;
+    }
+}
